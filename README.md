@@ -25,7 +25,8 @@ The cross entropy loss is a very good measure of how distinguishable two discret
 
 Furthermore, cross entropy is a very textbook loss for problems/formulations such as these. We use it over regression based losses like the mean squared error loss as we want to perform Convex optimization. The MSE function is non-convex for binary classification. In simple terms, if a binary classification model is trained with MSE Cost function, it is not guaranteed to minimize the Cost function. This is because MSE function expects real-valued inputs in range(-∞, ∞), while binary classification models output probabilities in range(0,1) through the sigmoid/logistic function.
 
-![image](https://user-images.githubusercontent.com/20723780/138416248-eddf6e62-eeef-4ccb-8b96-013c42ada084.png)
+![image](https://user-images.githubusercontent.com/80246631/142167678-ae398008-42b2-40d6-bcd4-77d9f1e79092.png)
+
 
 For the purpose of cross validation a 10 fold, stratified K-fold cross validation is performed. Hence, the training data is picked from a strata randomly with ten different hold-outs per fold.
 
