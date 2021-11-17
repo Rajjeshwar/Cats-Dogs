@@ -1,7 +1,7 @@
 # Image classification using CNN and K-fold cross validation
 
 
-First, here's an execellent explanation from Colah's blog post: 
+First, here's an excellent explanation from Colah's blog post: 
 
 ![image](https://user-images.githubusercontent.com/80246631/142145868-6f80d499-2fa2-440c-9b15-8c92d7f6b6e9.png)
 
