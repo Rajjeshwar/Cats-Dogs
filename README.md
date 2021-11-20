@@ -69,6 +69,14 @@ https://towardsdatascience.com/tensorflow-gpu-installation-made-easy-use-conda-i
 
  ```
  
+ ## Usage:
+ 
+ ```
+ conda install -c conda-forge jupyterlab
+ jupyter-lab
+ #open CatsVSDogs-Dataload.ipynb
+ #open Classifier_Model.ipynb
+ ```
  
  ## Format code to PEP-8 standards (Important for contributing to the repo): 
  
