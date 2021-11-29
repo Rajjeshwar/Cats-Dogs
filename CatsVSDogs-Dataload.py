@@ -115,7 +115,8 @@ def create_train_set(data, test_size):
         X, Y, test_size=test_size, random_state=42, shuffle=True
     )
 
-    X_train = X_train / 255.0
+    #Normalizing images for feature scaling and appropriate convergence during hill climb/SGD algorithms
+    X_train = X_train / 255.0   
     X_test = X_test / 255.0
 
     return X_train, X_test, Y_train, Y_test
