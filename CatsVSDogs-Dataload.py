@@ -2,9 +2,9 @@
 # coding: utf-8
 
 # ### Import libraries
-#
 
-# In[1]:
+
+
 
 
 import numpy as np
@@ -19,9 +19,9 @@ from numpy import save
 
 
 # ### Set Path
-#
 
-# In[2]:
+
+
 
 
 data_directory = r"C:\Users\Desktop\Desktop\JuPyter Notebooks\data\Cats&Dogs\PetImages"
@@ -29,9 +29,9 @@ categories = ["Dog", "Cat"]
 
 
 # ### Classes
-#
 
-# In[3]:
+
+
 
 
 def check_category(categories):
@@ -50,7 +50,7 @@ def check_category(categories):
     return category_example
 
 
-# In[4]:
+
 
 
 category_example = check_category(categories)
@@ -58,7 +58,7 @@ category_example = check_category(categories)
 
 # ### Resize images to a standard size
 
-# In[5]:
+
 
 
 img_size = 90
@@ -68,7 +68,7 @@ new_array = cv2.resize(category_example, (img_size, img_size))
 test_size = 0.2  # split for train and test
 
 
-# In[6]:
+
 
 
 data = []
@@ -88,19 +88,19 @@ def load_data():
     return data
 
 
-# In[7]:
+
 
 
 data = load_data()
 
 
-# In[8]:
+
 
 
 random.shuffle(data)
 
 
-# In[9]:
+
 
 
 def create_train_set(data, test_size):
@@ -121,13 +121,13 @@ def create_train_set(data, test_size):
     return X_train, X_test, Y_train, Y_test
 
 
-# In[10]:
+
 
 
 X_train, X_test, Y_train, Y_test = create_train_set(data, test_size)
 
 
-# In[11]:
+
 
 
 def save_data():
@@ -137,7 +137,7 @@ def save_data():
     save("Y_test_cats-dogs.npy", Y_test)
 
 
-# In[12]:
+
 
 
 class Test(unittest.TestCase):
@@ -163,7 +163,7 @@ if __name__ == "__main__":
     unittest.main(argv=["first-arg-is-ignored"], exit=False)
 
 
-# In[13]:
+
 
 
 save_data()
