@@ -69,6 +69,8 @@ https://towardsdatascience.com/tensorflow-gpu-installation-made-easy-use-conda-i
 
  ```
  
+
+ 
  ## Usage:
  
  ```
@@ -85,6 +87,15 @@ https://towardsdatascience.com/tensorflow-gpu-installation-made-easy-use-conda-i
  ```
  black CatsVSDogs-Dataload.py
  black Classifier_Model.py
+ ```
+ 
+ ## Download dataset
+ 
+ To download the dataset, run the `dataset.py` file, this will download the dataset in a zip file in the working directory.
+ 
+ ```
+ python dataset.py
+ 
  ```
  
 If you wish to use change the dataset used here change the following to correctly reflect the directory in `CatsVSDogs-Dataload.py`:
