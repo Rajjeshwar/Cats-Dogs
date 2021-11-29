@@ -88,6 +88,9 @@ https://towardsdatascience.com/tensorflow-gpu-installation-made-easy-use-conda-i
  black CatsVSDogs-Dataload.py
  black Classifier_Model.py
  ```
+ ## Unit Tests
+ 
+ Extensive shape based unit tests have been included in the code.
  
  ## Download dataset
  
