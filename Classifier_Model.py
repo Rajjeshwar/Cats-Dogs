@@ -3,7 +3,7 @@
 
 # ### Import libraries
 
-# In[1]:
+
 
 
 import tensorflow as tf
@@ -29,7 +29,7 @@ from numpy import load
 
 # ### Load train and test
 
-# In[2]:
+
 
 
 def load_saved_data():
@@ -41,7 +41,7 @@ def load_saved_data():
     return X_train, Y_train, X_test, Y_test
 
 
-# In[3]:
+
 
 
 X_train, Y_train, X_test, Y_test = load_saved_data()
@@ -49,19 +49,19 @@ X_train, Y_train, X_test, Y_test = load_saved_data()
 
 # ### Train model with stratified k-fold cross validation
 
-# In[4]:
+
 
 
 cvscores = []
 
 
-# In[5]:
+
 
 
 kfold = StratifiedKFold(n_splits=10, shuffle=True, random_state=5)
 
 
-# In[6]:
+
 
 
 for train, val in kfold.split(X_train, Y_train):
@@ -102,19 +102,19 @@ for train, val in kfold.split(X_train, Y_train):
 
 # ### Analysis and metrics on train data
 
-# In[7]:
+
 
 
 print(cvscores)
 
 
-# In[8]:
+
 
 
 plt.plot(cvscores)
 
 
-# In[9]:
+
 
 
 print("mean: ", np.mean(cvscores))
@@ -123,13 +123,12 @@ print("std: ", np.std(cvscores))
 
 # ### Evaluate on test set
 
-# In[10]:
+
 
 
 test_score = model.evaluate(X_test, Y_test)
 
 
-# In[11]:
 
 
 plt.plot(history.history["accuracy"])
